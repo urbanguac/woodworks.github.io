@@ -44,7 +44,7 @@
 		$(document).ready(function() {$(".hovr").fadeTo("fast",0.33);});
 		$(".hovr").hover(function() { $(this).fadeTo("fast",1.0); }, function() { $(this).fadeTo("fast", 0.33); });
 		$(".hovr").click(function() { 
-			if(count==0){$("#one").removeClass("hovr"); $("#one").html($(this).html()); count++;}
+			if(count==0){$("#one").off("click"); $("#one").html($(this).html()); count++;}
 		});
 	</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
