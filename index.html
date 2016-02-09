@@ -7,7 +7,7 @@
         <meta name="description" content=""
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-		.hovr {
+		.hovr2 {
 			width:25%;height:100%;background-color:aquamarine;color:white;
 		}
 	</style>
@@ -26,10 +26,10 @@
 	<div id="container" type="container" class="container" style="height:100% !important">
 		<table style="width:100%; height:100% !important;">
 			<tr style="width:100%; height:25%;">
-				<td class="hovr" id="one">Data One</td>
-				<td class="hovr" id="two">Data Two</td>
-				<td class="hovr" id="three">Data Three</td>
-				<td class="hovr" id="four">Data Four</td>
+				<td class="hovr hovr2" id="one">Data One</td>
+				<td class="hovr hovr2" id="two">Data Two</td>
+				<td class="hovr hovr2" id="three">Data Three</td>
+				<td class="hovr hovr2" id="four">Data Four</td>
 			</tr>
 		</table>
 	</div>
@@ -44,7 +44,7 @@
 		$(document).ready(function() {$(".hovr").fadeTo("fast",0.33);});
 		$(".hovr").hover(function() { $(this).fadeTo("fast",1.0); }, function() { $(this).fadeTo("fast", 0.33); });
 		$(".hovr").click(function() { 
-			if(count==0){$("#one").off("click"); $("#one").html($(this).html()); count++;}
+			if(count==0){ $("#one").removeClass("hovr"); $("#one").off("click"); $("#one").html($(this).html()); count++;}
 		});
 	</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
