@@ -26,10 +26,10 @@
 	<div id="container" type="container" class="container" style="height:100% !important">
 		<table style="width:100%; height:100% !important;">
 			<tr style="width:100%; height:25%;">
-				<td class="hovr"></td>
-				<td class="hovr"></td>
-				<td class="hovr"></td>
-				<td class="hovr"></td>
+				<td class="hovr" id="one">Data One</td>
+				<td class="hovr" id="two">Data Two</td>
+				<td class="hovr" id="three">Data Three</td>
+				<td class="hovr" id="four">Data Four</td>
 			</tr>
 		</table>
 	</div>
@@ -40,8 +40,12 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 	<script>
+	var count = 0;
 		$(document).ready(function() {$(".hovr").fadeTo("fast",0.33);});
 		$(".hovr").hover(function() { $(this).fadeTo("fast",1.0); }, function() { $(this).fadeTo("fast", 0.33); });
+		$(".hovr").click(function() { 
+			if(count==0){$("#one").removeClass("hovr"); $("#one").html($(this).html()); count++;}
+		});
 	</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
