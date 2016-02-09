@@ -50,7 +50,7 @@
 		$(".hovr2").hover(function() { $(this).fadeTo("fast",1.0);}, function() { $(this).fadeTo("fast",1.0);});
 		$(".hovr").hover(function() { $(this).fadeTo("fast",1.0); }, function() { $(this).fadeTo("fast", 0.33); });
 		$(".hovr").click(function() { 
-			if(count==0){  $("#one").html($(this).html()); $("#one").removeClass("hovr"); $("#one").unbind("hover"); $("#one").unbind("click"); $("#one").addClass("hovr2"); count++;}
+			if(count==0){  $("#one").html($(this).html()); $("#one").removeClass("hovr"); $("#one").unbind("hover"); $("#one").unbind("click"); $("#one").addClass("hovr2"); $("#one").fadeTo("fast",1.0); count++;}
 		});
 	</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
