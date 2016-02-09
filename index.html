@@ -47,6 +47,7 @@
 	<script>
 	var count = 0;
 		$(document).ready(function() {$(".hovr").fadeTo("fast",0.33);});
+		$(".hovr2").hover(function() { $(this).fadeTo("fast",1.0);}, function() { $(this).fadeTo("fast",1.0);});
 		$(".hovr").hover(function() { $(this).fadeTo("fast",1.0); }, function() { $(this).fadeTo("fast", 0.33); });
 		$(".hovr").click(function() { 
 			if(count==0){  $("#one").html($(this).html()); $("#one").removeClass("hovr"); $("#one").unbind("hover"); $("#one").unbind("click"); $("#one").addClass("hovr2"); count++;}
