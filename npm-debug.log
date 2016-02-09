@@ -1,0 +1,166 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'gitbook-cli', '-g' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'gitbook-cli', null ]
+7 verbose cache add spec gitbook-cli
+8 silly cache add parsed spec { raw: 'gitbook-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gitbook-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed gitbook-cli@*
+10 verbose addNamed "*" is a valid semver range for gitbook-cli
+11 silly addNameRange { name: 'gitbook-cli', range: '*', hasData: false }
+12 silly mapToRegistry name gitbook-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gitbook-cli
+16 verbose addNameRange registry:https://registry.npmjs.org/gitbook-cli not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gitbook-cli
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:19:54 AM
+20 verbose request id a2eed4547d5e094f
+21 http request GET https://registry.npmjs.org/gitbook-cli
+22 http 200 https://registry.npmjs.org/gitbook-cli
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"2VHYN3TI0BERG77MKSB6ZYIR3"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'content-length': '17297',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Tue, 09 Feb 2016 14:15:59 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-atl6235-ATL',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1455027359.200585,VS0,VE101',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving gitbook-cli to /Users/Priansh/.npm/registry.npmjs.org/gitbook-cli/.cache.json
+25 silly addNameRange number 2 { name: 'gitbook-cli', range: '*', hasData: true }
+26 silly addNameRange versions [ 'gitbook-cli',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.3.3',
+26 silly addNameRange     '0.3.4',
+26 silly addNameRange     '0.3.5',
+26 silly addNameRange     '0.3.6',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.0.1' ] ]
+27 silly addNamed gitbook-cli@1.0.1
+28 verbose addNamed "1.0.1" is a plain semver version for gitbook-cli
+29 silly mapToRegistry name gitbook-cli
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/gitbook-cli
+33 verbose addRemoteTarball https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz',
+34 verbose addRemoteTarball   '110f070f133a5a5453cd488e201baeb6d78ea60a' ]
+35 info retry fetch attempt 1 at 9:19:54 AM
+36 info attempt registry request try #1 at 9:19:54 AM
+37 http fetch GET https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz
+38 http fetch 200 https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz
+39 silly fetchAndShaCheck shasum 110f070f133a5a5453cd488e201baeb6d78ea60a
+40 verbose addTmpTarball /var/folders/pt/h_qgy5150qn93skx2m7z_xmr0000gn/T/npm-68184-55643ef8/registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for gitbook-cli@1.0.1
+42 silly cache afterAdd gitbook-cli@1.0.1
+43 verbose afterAdd /Users/Priansh/.npm/gitbook-cli/1.0.1/package/package.json not in flight; writing
+44 verbose afterAdd /Users/Priansh/.npm/gitbook-cli/1.0.1/package/package.json written
+45 silly install resolved [ { name: 'gitbook-cli',
+45 silly install resolved     version: '1.0.1',
+45 silly install resolved     homepage: 'https://www.gitbook.com',
+45 silly install resolved     description: 'CLI to generate books and documentation using gitbook',
+45 silly install resolved     main: 'bin/gitbook.js',
+45 silly install resolved     dependencies:
+45 silly install resolved      { q: '1.4.1',
+45 silly install resolved        lodash: '3.10.1',
+45 silly install resolved        semver: '5.0.1',
+45 silly install resolved        npmi: '1.0.1',
+45 silly install resolved        tmp: '0.0.27',
+45 silly install resolved        commander: '2.8.1',
+45 silly install resolved        optimist: '0.6.1',
+45 silly install resolved        'fs-extra': '0.24.0',
+45 silly install resolved        'bash-color': '0.0.3',
+45 silly install resolved        npm: '2.14.8',
+45 silly install resolved        'user-home': '2.0.0' },
+45 silly install resolved     devDependencies: { mocha: '2.3.3', should: '7.1.0', gitbook: '2.5.0-beta.1' },
+45 silly install resolved     scripts: { test: 'mocha --reporter spec --recursive --bail' },
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/GitbookIO/gitbook-cli.git' },
+45 silly install resolved     author: { name: 'FriendCode Inc.', email: 'contact@gitbook.com' },
+45 silly install resolved     license: 'Apache-2.0',
+45 silly install resolved     bugs: { url: 'https://github.com/GitbookIO/gitbook-cli/issues' },
+45 silly install resolved     bin: { gitbook: './bin/gitbook.js' },
+45 silly install resolved     contributors: [ [Object], [Object] ],
+45 silly install resolved     gitHead: '096f4a75f9fd64e68544cde8b41c7d97a934e3a4',
+45 silly install resolved     _id: 'gitbook-cli@1.0.1',
+45 silly install resolved     _shasum: '110f070f133a5a5453cd488e201baeb6d78ea60a',
+45 silly install resolved     _from: 'gitbook-cli@*',
+45 silly install resolved     _npmVersion: '3.3.12',
+45 silly install resolved     _nodeVersion: '5.1.0',
+45 silly install resolved     _npmUser: { name: 'samypesse', email: 'samypesse@gmail.com' },
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '110f070f133a5a5453cd488e201baeb6d78ea60a',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-1.0.1.tgz' } ]
+46 info install gitbook-cli@1.0.1 into /usr/local/lib
+47 info installOne gitbook-cli@1.0.1
+48 verbose installOne of gitbook-cli to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/Priansh/.npm/_locks/gitbook-cli-cc2b8dc9c0a7c1f8.lock for /usr/local/lib/node_modules/gitbook-cli
+50 silly install write writing gitbook-cli 1.0.1 to /usr/local/lib/node_modules/gitbook-cli
+51 verbose unbuild lib/node_modules/gitbook-cli
+52 silly gentlyRm /usr/local/lib/node_modules/gitbook-cli is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gitbook-cli
+54 verbose tar unpack /Users/Priansh/.npm/gitbook-cli/1.0.1/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/gitbook-cli
+56 silly gentlyRm /usr/local/lib/node_modules/gitbook-cli is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gitbook-cli
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /Users/Priansh/.npm/gitbook-cli/1.0.1/package.tgz
+60 verbose unlock done using /Users/Priansh/.npm/_locks/gitbook-cli-cc2b8dc9c0a7c1f8.lock for /usr/local/lib/node_modules/gitbook-cli
+61 verbose fstream_path /usr/local/lib/node_modules/gitbook-cli
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/gitbook-cli'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+66 verbose cwd /Users/Priansh/Documents/hackworks/woodworks.github.io
+67 error Darwin 15.0.0
+68 error argv "node" "/usr/local/bin/npm" "install" "gitbook-cli" "-g"
+69 error node v0.12.3
+70 error npm  v2.9.1
+71 error path /usr/local/lib/node_modules/gitbook-cli
+72 error code EACCES
+73 error errno -13
+74 error Error: EACCES, mkdir '/usr/local/lib/node_modules/gitbook-cli'
+74 error     at Error (native)
+74 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/gitbook-cli']
+74 error   errno: -13,
+74 error   code: 'EACCES',
+74 error   path: '/usr/local/lib/node_modules/gitbook-cli',
+74 error   fstream_type: 'Directory',
+74 error   fstream_path: '/usr/local/lib/node_modules/gitbook-cli',
+74 error   fstream_class: 'DirWriter',
+74 error   fstream_stack:
+74 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+74 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+74 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ -13, true ]
+77 verbose unbuild lib/node_modules/gitbook-cli
+78 silly gentlyRm /usr/local/lib/node_modules/gitbook-cli is being purged from base /usr/local
+79 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gitbook-cli
