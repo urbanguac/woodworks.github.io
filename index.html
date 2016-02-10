@@ -9,11 +9,11 @@
 	<style>
 		.hovr {
 			width:25%;height:100%;background-color:aquamarine;color:white; text-align:center;
-			font-size:28pt;
+			font-size:28pt; position:fixed;
 		}
 		.hovr2 {
 			width:25%; height:100%; background-color:lightcoral; color:white; text-align:center;
-			font-size:28pt;
+			font-size:28pt; position:fixed;
 		}
 	</style>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -31,7 +31,7 @@
 	<div id="container" type="container" class="container" style="height:100% !important">
 		<table style="width:100%; height:100% !important;">
 			<tr style="width:100%; height:25%;">
-				<td class="hovr" id="one">Data One</td>
+				<td class="hovr" data="transform:rotate(0deg)" data-500="transform:rotate(360deg)" id="one">Data One</td>
 				<td class="hovr " id="two">Data Two</td>
 				<td class="hovr" id="three">Data Three</td>
 				<td class="hovr" id="four">Data Four</td>
@@ -62,5 +62,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script type="text/javascript" src="skrollr.min.js"></script>
+    	<script type="text/javascript">
+		var s = skrollr.init();
+    	</script>
     </body>
 </html>
